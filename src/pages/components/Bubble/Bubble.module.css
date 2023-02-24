@@ -1,0 +1,6 @@
+.container {
+  border-radius: 100%;
+  box-shadow: 2px 5px 20px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 2px 5px 20px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 2px 5px 20px 0px rgba(0,0,0,0.1);
+}

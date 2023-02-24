@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  opacity: 0.6;
+}
+
+.container > div:first-child {
+  margin-right: -100px;
+  z-index: 2;
+}
+
+.container > div:last-child {
+  margin-top: 100px;
+  margin-left: -100px;
+  z-index: -1;
+}
