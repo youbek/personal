@@ -1,7 +1,9 @@
 .container {
+  position: fixed;
   display: flex;
   flex-direction: row;
-  opacity: 0.6;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .container > div:first-child {

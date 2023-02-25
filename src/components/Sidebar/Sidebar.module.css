@@ -1,0 +1,29 @@
+.container ul {
+  padding: 0;
+  margin-bottom: 150px;
+}
+
+.container ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+
+.activeNavigation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1; 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  background: rgba(255, 255, 255, 0.14) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 6px;
+  transform: translate(-50%, -50%); /*Add this*/
+}
+
+.container button a {
+  text-decoration: none;
+  color: #1D1D1D;
+}

@@ -1,0 +1,17 @@
+.layout {
+  width: 60%;
+  margin: auto;
+  padding: 120px;
+}
+
+.backgroundBubblesContainer {
+  margin-left: 0px;
+}
+
+.layoutContent {
+  display: flex;
+}
+
+.sidebarContainer {
+  width: 200px;
+}

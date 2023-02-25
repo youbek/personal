@@ -16,7 +16,7 @@ function buildSeamlessLinearGradient(colors: string[]) {
   ].reduce(
     (gradient, color, index) => `${gradient}${index !== 0 ? "," : ""} ${color}`,
     ""
-  )});`;
+  )})`;
 }
 
 function calculateGradientBackgroundSize(colorsAmount: number) {
@@ -28,8 +28,6 @@ function calculateGradientBackgroundSize(colorsAmount: number) {
 }
 
 export function useGradientSpring(colors: string[]) {
-  console.log(buildSeamlessLinearGradient(colors));
-
   const [spring, api] = useSpring(() => ({
     from: {
       backgroundImage: buildSeamlessLinearGradient(colors),
