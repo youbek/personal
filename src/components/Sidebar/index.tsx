@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { animated } from "react-spring";
+import { ArrowUpRight } from "react-feather";
 
 import { SidebarNavButton } from "./SidebarNavButton";
 import styles from "./Sidebar.module.css";
@@ -43,7 +44,9 @@ export function Sidebar() {
         </li>
       </ul>
 
-      <Button>resume</Button>
+      <Button version="secondary" icon={<ArrowUpRight />}>
+        resume
+      </Button>
     </div>
   );
 }

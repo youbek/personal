@@ -1,0 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
+:root, a {
+  color: #1D1D1D;
+}
