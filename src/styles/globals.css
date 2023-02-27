@@ -4,4 +4,14 @@ body {
 
 :root, a {
   color: #1D1D1D;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
 }

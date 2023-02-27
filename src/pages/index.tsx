@@ -1,4 +1,9 @@
+import { Button } from "@/components/Button";
+import { ProfilePicture } from "@/components/ProfilePicture";
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "react-feather";
 
 export default function Home() {
   return (
@@ -10,7 +15,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1>About me page</h1>
+        <ProfilePicture />
+        <h1>Yusufbek Alimatov</h1>
+        <div>
+          <p>
+            Hey 👋, I’m Yusuf. Software engineer living and working remotly from
+            Tashkent.
+          </p>
+          <p>
+            I&apos;ve been coding professionaly for more than 5 years now,
+            throughout my software engineering career, I was able to work in
+            various companies in various industries, solved different problems,
+            and used various tools.
+          </p>
+          <p>
+            Currently, I&apos;m looking for senior full stack software
+            engineering positions.
+          </p>
+        </div>
+        <Link href="/work">
+          <Button icon={<ArrowRight />}>Learn more about work</Button>
+        </Link>
       </div>
     </>
   );
