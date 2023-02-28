@@ -1,0 +1,38 @@
+.workCardContainer {
+  margin-bottom: 36px;
+  display: flex;
+}
+
+.workCardDateText {
+  display: block;
+  width: 150px;
+  white-space: nowrap;
+  word-break: keep-all;
+  color: #86868B;
+  line-height: 22px;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+.workCardHeader {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.workCardHeader span {
+  margin-left: 5px;
+}
+
+.workCardDescription {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.usedTechnologiesContainer {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86868B;
+}

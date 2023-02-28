@@ -1,7 +1,6 @@
 import { Button } from "@/components/Button";
 import { ProfilePicture } from "@/components/ProfilePicture";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "react-feather";
 
