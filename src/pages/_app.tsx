@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
     leave: {
       opacity: 0,
       config: {
-        duration: 1000,
+        duration: 900,
       },
     },
     exitBeforeEnter: true,
