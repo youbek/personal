@@ -5,14 +5,19 @@ import styles from "@/styles/Work.module.css";
 import { Button } from "@/components/Button";
 import { WorkCard } from "@/components/WorkCard";
 import works from "./works";
+import { BouncyBox } from "@/components/BouncyBox";
 
 function WorkPage() {
   return (
     <div>
-      <h1>Work Experience</h1>
+      <BouncyBox>
+        <h1>Work Experience</h1>
+      </BouncyBox>
       <div className={styles.worksListContainer}>
-        {works.map((work) => (
-          <WorkCard key={work.companyName} work={work} />
+        {works.map((work, i) => (
+          <BouncyBox key={i} delay={50 * i}>
+            <WorkCard key={work.companyName} work={work} />
+          </BouncyBox>
         ))}
       </div>
       <Link href="/projects">

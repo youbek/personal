@@ -8,7 +8,7 @@
   margin-bottom: 30px;
 }
 
-.projectsRow > div {
+.projectsRow > div > div {
   width: 280px;
   margin-right: 12px;
 }
