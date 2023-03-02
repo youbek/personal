@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: rgba(238, 238, 238, 0.4) !important;
+  border: 1px solid #F3F3F3 !important;
+  border-radius: 6px;
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  margin-right: 12px;
+}
+
+.thumbnailContainer {
+  padding: 12px;
+  padding-bottom: 10px;
+}
+
+.thumbnailContainer > img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.bodyContainer {
+  padding: 12px;
+  padding-top: 0;
+}

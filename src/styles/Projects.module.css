@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsRow {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.projectsRow > div {
+  width: 280px;
+  margin-right: 12px;
+}
+

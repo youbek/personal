@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "react-feather";
+import { TechnologiesList } from "../TechnologiesList";
 import styles from "./WorkCard.module.css";
 
 export type Work = {
@@ -36,13 +37,7 @@ export function WorkCard({ work }: Props) {
           </a>
         </h5>
         <p className={styles.workCardDescription}>{work.description}</p>
-        <div className={styles.usedTechnologiesContainer}>
-          {work.usedTechnologies.map(
-            (technology, index) =>
-              technology +
-              (index === work.usedTechnologies.length - 1 ? "" : " • ")
-          )}
-        </div>
+        <TechnologiesList techs={work.usedTechnologies} />
       </div>
     </div>
   );
