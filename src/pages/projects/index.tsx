@@ -71,7 +71,9 @@ function ProjectsPage() {
         </div>
       </div>
       <BouncyBox delay={400}>
-        <Button icon={<ArrowRight />}>Get in touch</Button>
+        <a href="mailto:yusufbek.a@outlook.com">
+          <Button icon={<ArrowRight />}>Get in touch</Button>
+        </a>
       </BouncyBox>
     </div>
   );

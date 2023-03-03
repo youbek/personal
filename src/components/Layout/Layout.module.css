@@ -10,7 +10,22 @@
 
 .layoutContent {
   display: flex;
+  height: calc(100vh - 120px); /* Subtract top + bottom padding */
 }
+
+.layoutContent > main {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.layoutContent > main > div {
+  padding-bottom: 120px;
+}
+
+.layoutContent > main::-webkit-scrollbar {
+  display: none;
+}
+
 
 .sidebarContainer {
   width: 200px;

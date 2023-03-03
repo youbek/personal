@@ -19,22 +19,31 @@ export default function Home() {
         <div>
           <BouncyBox delay={30}>
             <p>
-              Hey 👋, I&apos;m Yusuf. Software engineer living and working
-              remotly from Tashkent.
+              Hey 👋, I&apos;m Yusuf. JavaScript/TypeScript software engineer
+              living and working remotly from Tashkent.
             </p>
           </BouncyBox>
           <BouncyBox delay={100}>
             <p>
-              I&apos;ve been coding professionaly for more than 5 years now,
-              throughout my software engineering career, I was able to work in
-              various companies in various industries, solved different
-              problems, and used various tools.
+              Over the course of my 5+ years of experience I’ve been fortunate
+              to work on creating high-quality software with all things
+              JavaScript especially React and Node.
+            </p>
+          </BouncyBox>
+          <BouncyBox delay={120}>
+            <p>
+              I worked on delivering and architecting complex CRM systems,
+              internal tools, micro frontends. I actively participated on
+              decision making, as well as team’s goal setting. I enjoy learning
+              new technologies and constantly work on improving my skills and
+              workflow.
             </p>
           </BouncyBox>
           <BouncyBox delay={140} from={{ y: 50, opacity: 0 }}>
             <p>
-              Currently, I&apos;m looking for senior full stack software
-              engineering positions.
+              When not working, you can find me in Tashkent, Uzbekistan with my
+              big family. I enjoy traveling, playing online games such as Dota
+              2, and I enjoy having 6 cups of coffee a day)
             </p>
           </BouncyBox>
         </div>

@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
     },
     exitBeforeEnter: true,
     config: {
-      duration: 100,
+      duration: 0,
     },
   });
 
