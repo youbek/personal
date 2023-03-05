@@ -6,13 +6,12 @@ import { useMovementSpring, MovementSquareBorders } from "./useMovementSpring";
 import bubbleModuleCss from "./Bubble.module.css";
 import { useGradientSpring } from "./useGradientSpring";
 
-type Props = {
-  radius: number;
+export type BubbleConfig = {
   movementSquareBorders: MovementSquareBorders;
   colors: string[];
 };
 
-function Bubble({ radius, movementSquareBorders, colors }: Props) {
+function Bubble({ movementSquareBorders, colors }: BubbleConfig) {
   const movementSpring = useMovementSpring(movementSquareBorders);
   const gradientSpring = useGradientSpring(colors);
 
@@ -20,8 +19,6 @@ function Bubble({ radius, movementSquareBorders, colors }: Props) {
     <animated.div
       className={bubbleModuleCss.container}
       style={{
-        width: radius * 2,
-        height: radius * 2,
         ...movementSquareBorders,
         ...movementSpring,
         ...gradientSpring,

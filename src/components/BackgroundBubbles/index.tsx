@@ -7,7 +7,6 @@ export function BackgroundBubbles() {
     <div className={styles.container}>
       <div>
         <Bubble
-          radius={120}
           colors={[
             "#BC4E9C",
             "#F80759",
@@ -27,7 +26,6 @@ export function BackgroundBubbles() {
       </div>
       <div>
         <Bubble
-          radius={220}
           colors={[
             "#E5E5BE",
             "#4568DC",
@@ -46,7 +44,6 @@ export function BackgroundBubbles() {
       </div>
       <div>
         <Bubble
-          radius={180}
           colors={["#A8FF78", "#78FFD6", "#EF32D9", "#FDB99B"]}
           movementSquareBorders={{
             left: -5,

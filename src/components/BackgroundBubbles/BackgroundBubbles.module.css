@@ -16,3 +16,45 @@
   margin-left: -100px;
   z-index: -1;
 }
+
+/* First bubble */
+.container > div:first-child > div {
+  width: 240px;
+  height: 240px;
+}
+
+/* Middle bubble */
+.container > div:nth-child(2) > div {
+  width: 440px;
+  height: 440px;
+}
+
+/* Third bubble */
+.container > div:last-child > div {
+  width: 360px;
+  height: 360px;  
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+  }
+
+  /* First bubble */
+  .container > div:first-child > div {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Middle bubble */
+  .container > div:nth-child(2) > div {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Third bubble */
+  .container > div:last-child > div {
+    width: 180px;
+    height: 180px;  
+  }
+}

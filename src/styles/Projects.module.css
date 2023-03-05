@@ -8,8 +8,19 @@
   margin-bottom: 30px;
 }
 
-.projectsRow > div > div {
+.projectsRow > div {
   width: 280px;
   margin-right: 12px;
 }
 
+@media screen and (max-width: 768px) {
+  .projectsRow {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  
+  .projectsRow > div {
+    width: 100%;
+    margin-bottom: 30px;
+  } 
+}

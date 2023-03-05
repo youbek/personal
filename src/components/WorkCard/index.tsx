@@ -21,7 +21,7 @@ export function WorkCard({ work }: Props) {
     <div className={styles.workCardContainer}>
       <div>
         <span className={styles.workCardDateText}>
-          {work.startDate} -<br />
+          {work.startDate} - <br />
           {work.endDate}
         </span>
       </div>

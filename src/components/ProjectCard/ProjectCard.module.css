@@ -8,6 +8,7 @@
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   margin-right: 12px;
+  width: 100%;
 }
 
 .thumbnailContainer {

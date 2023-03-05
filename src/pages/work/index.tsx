@@ -20,9 +20,11 @@ function WorkPage() {
           </BouncyBox>
         ))}
       </div>
-      <Link href="/projects">
-        <Button icon={<ArrowRight />}>Learn more about projects</Button>
-      </Link>
+      <BouncyBox delay={50 * works.length}>
+        <Link href="/projects">
+          <Button icon={<ArrowRight />}>Learn more about projects</Button>
+        </Link>
+      </BouncyBox>
     </div>
   );
 }

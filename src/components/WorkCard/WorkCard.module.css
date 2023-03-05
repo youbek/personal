@@ -31,3 +31,17 @@
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 768px) {
+  .workCardContainer {
+    flex-direction: column;
+  }
+
+  .workCardDateText {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .workCardDateText > br {
+    display:contents;
+  }
+}

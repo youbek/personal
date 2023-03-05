@@ -22,7 +22,7 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: dominoThumbnail,
-                link: "https://github.com",
+                link: "https://github.com/youbek/domino-mvp",
                 title: "Domino - Productivity app",
                 usedTechnologies: ["Node", "TS", "React", "GraphQL"],
               }}
@@ -32,7 +32,7 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: loadistThumbnail,
-                link: "https://github.com",
+                link: "https://qa.loadist.io/sign-in",
                 title: "Loadist.io - Relay automation",
                 usedTechnologies: [
                   "PostgreSQL",
@@ -52,7 +52,7 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: sozTopThumbnail,
-                link: "https://github.com",
+                link: "https://play.google.com/store/apps/details?id=com.OyyuGames.WordGame",
                 title: "Soz Top - Word Game",
                 usedTechnologies: ["C#", "Unity 3D"],
               }}
@@ -62,8 +62,8 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: aralashSozThumbnail,
-                link: "https://github.com",
-                title: "Aralash So'z - Relay automation",
+                link: "https://apps.apple.com/us/app/aralash-soz-soz-oyini/id1465774649",
+                title: "Aralash So'z - Word Game",
                 usedTechnologies: ["C#", "Unity 3D"],
               }}
             />

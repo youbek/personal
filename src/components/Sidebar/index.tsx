@@ -44,9 +44,11 @@ export function Sidebar() {
         </li>
       </ul>
 
-      <Button version="secondary" icon={<ArrowUpRight />}>
-        resume
-      </Button>
+      <a href="/yusufbek-resume-v1.pdf" download>
+        <Button version="secondary" icon={<ArrowUpRight />}>
+          resume
+        </Button>
+      </a>
     </div>
   );
 }

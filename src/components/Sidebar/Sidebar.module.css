@@ -26,3 +26,17 @@
 .container button a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container ul {
+    width: fit-content;
+    display: inline-flex;
+    margin-bottom: 0px;
+  }
+}

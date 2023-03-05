@@ -19,31 +19,27 @@ export default function Home() {
         <div>
           <BouncyBox delay={30}>
             <p>
-              Hey 👋, I&apos;m Yusuf. JavaScript/TypeScript software engineer
-              living and working remotly from Tashkent.
+              Hey 👋, my name is Yusuf, and I&apos;m a JavaScript/TypeScript
+              software engineer living and working remotely from Tashkent. With
+              over 5 years of experience, I have been fortunate to work on
+              creating high-quality software using various JavaScript
+              technologies, particularly React and Node.
             </p>
           </BouncyBox>
           <BouncyBox delay={100}>
             <p>
-              Over the course of my 5+ years of experience I’ve been fortunate
-              to work on creating high-quality software with all things
-              JavaScript especially React and Node.
+              Throughout my career, I have worked on delivering and architecting
+              complex CRM systems, internal tools, and micro frontends. I have
+              actively participated in decision-making processes and setting
+              team goals. Learning new technologies is a passion of mine, and I
+              constantly work to improve my skills and workflow.
             </p>
           </BouncyBox>
           <BouncyBox delay={120}>
             <p>
-              I worked on delivering and architecting complex CRM systems,
-              internal tools, micro frontends. I actively participated on
-              decision making, as well as team’s goal setting. I enjoy learning
-              new technologies and constantly work on improving my skills and
-              workflow.
-            </p>
-          </BouncyBox>
-          <BouncyBox delay={140} from={{ y: 50, opacity: 0 }}>
-            <p>
-              When not working, you can find me in Tashkent, Uzbekistan with my
-              big family. I enjoy traveling, playing online games such as Dota
-              2, and I enjoy having 6 cups of coffee a day)
+              When I am not working, you can find me with my big family in
+              Tashkent, Uzbekistan. I enjoy traveling, playing online games such
+              as Dota 2, and having 6 cups of coffee a day.
             </p>
           </BouncyBox>
         </div>
