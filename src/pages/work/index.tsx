@@ -4,7 +4,7 @@ import { ArrowRight } from "react-feather";
 import styles from "@/styles/Work.module.css";
 import { Button } from "@/components/Button";
 import { WorkCard } from "@/components/WorkCard";
-import works from "./works";
+import works from "@/constants/works";
 import { BouncyBox } from "@/components/BouncyBox";
 
 function WorkPage() {
