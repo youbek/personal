@@ -7,6 +7,7 @@ import { Layout } from "@/components/Layout";
 import "normalize.css/normalize.css";
 
 import type { AppProps } from "next/app";
+import useFoucFix from "@/hooks/useFoucFix";
 
 const inter = Inter({
   weight: ["300", "400", "700"],
@@ -14,6 +15,8 @@ const inter = Inter({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  useFoucFix();
+
   const pageTransitions = useTransition([Component], {
     from: { opacity: 1 },
     enter: { opacity: 1 },
