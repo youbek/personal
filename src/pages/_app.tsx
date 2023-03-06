@@ -1,3 +1,4 @@
+import { useEffect, useLayoutEffect } from "react";
 import { useTransition, animated } from "react-spring";
 import { Inter } from "@next/font/google";
 import Head from "next/head";
@@ -5,9 +6,11 @@ import Head from "next/head";
 import "@/styles/globals.css";
 import { Layout } from "@/components/Layout";
 import "normalize.css/normalize.css";
+import "speedlify-score/speedlify-score.css";
 
 import type { AppProps } from "next/app";
 import useFoucFix from "@/hooks/useFoucFix";
+import { useIsomorphicLayoutEffect } from "@/hooks";
 
 const inter = Inter({
   weight: ["300", "400", "700"],
@@ -16,6 +19,11 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }: AppProps) {
   useFoucFix();
+
+  useIsomorphicLayoutEffect(() => {
+    // @ts-ignore
+    import("speedlify-score/speedlify-score");
+  }, []);
 
   const pageTransitions = useTransition([Component], {
     from: { opacity: 1 },
