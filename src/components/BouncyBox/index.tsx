@@ -1,7 +1,8 @@
-import { PropsWithChildren, useEffect, useLayoutEffect } from "react";
+import { PropsWithChildren, useEffect } from "react";
 import { useRouter } from "next/router";
 import { animated, useTransition } from "react-spring";
 import { easings } from "@react-spring/web";
+import { useIsomorphicLayoutEffect } from "@/hooks";
 
 type AnimKeys = {
   y: number;
@@ -25,6 +26,7 @@ export function BouncyBox({
   children,
 }: Props) {
   const router = useRouter();
+  const { pathname } = useRouter();
 
   const [bodyTransitions, bodyTransitionApi] = useTransition(
     [children],
@@ -42,7 +44,11 @@ export function BouncyBox({
   );
 
   useEffect(() => {
-    const handleRouteChange = () => {
+    const handleRouteChange = (url: string) => {
+      const isNavigatedToSamePage = pathname === url;
+
+      if (isNavigatedToSamePage) return;
+
       bodyTransitionApi.start({
         to: {
           y: -20,
@@ -65,7 +71,7 @@ export function BouncyBox({
     };
   }, []);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     bodyTransitionApi.start();
   }, []);
 

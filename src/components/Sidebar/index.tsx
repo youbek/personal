@@ -1,6 +1,8 @@
-import { useCallback } from "react";
+import { useCallback, useRef } from "react";
 import { animated } from "react-spring";
 import { ArrowUpRight } from "react-feather";
+import { useWindowWidth } from "@react-hook/window-size";
+import { useIsomorphicLayoutEffect } from "@/hooks";
 
 import { SidebarNavButton } from "./SidebarNavButton";
 import styles from "./Sidebar.module.css";
@@ -9,9 +11,21 @@ import { Button } from "../Button";
 
 export function Sidebar() {
   const activeNavigationButtonSpring = useActiveNavigationButtonSpring();
+  const activeNavigatedButtonRef = useRef<HTMLButtonElement | null>(null);
+  const width = useWindowWidth();
+
+  useIsomorphicLayoutEffect(() => {
+    if (!activeNavigatedButtonRef.current) return;
+
+    activeNavigationButtonSpring.moveTo(activeNavigatedButtonRef.current, {
+      force: true,
+      immediate: true,
+    });
+  }, [width]);
 
   const handleNavigationChange = useCallback(
     (navigatedButton: HTMLButtonElement) => {
+      activeNavigatedButtonRef.current = navigatedButton;
       activeNavigationButtonSpring.moveTo(navigatedButton);
     },
     []

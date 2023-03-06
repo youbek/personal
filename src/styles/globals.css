@@ -17,7 +17,7 @@ h1 {
 p {
   font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,6 @@
-import { PropsWithChildren, useId, useLayoutEffect, useRef } from "react";
+import { PropsWithChildren, useId, useRef } from "react";
 import Link from "next/link";
+import { useIsomorphicLayoutEffect } from "@/hooks";
 
 import styles from "./SidebarNavButton.module.css";
 import { useRouter } from "next/router";
@@ -14,7 +15,7 @@ export function SidebarNavButton({ href, children, onNavigation }: Props) {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const { pathname, isReady } = useRouter();
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     // Check if the router fields are updated client-side (https://nextjs.org/docs/api-reference/next/router)
     if (!isReady || !buttonRef.current) return;
 

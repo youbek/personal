@@ -15,7 +15,13 @@ export function useActiveNavigationButtonSpring() {
     },
   }));
 
-  function moveTo(newActiveNavigationButton: Element) {
+  function moveTo(
+    newActiveNavigationButton: Element,
+    options: { force: boolean; immediate: boolean } = {
+      force: false,
+      immediate: false,
+    }
+  ) {
     const boundingClientRect =
       newActiveNavigationButton.getBoundingClientRect();
 
@@ -27,7 +33,7 @@ export function useActiveNavigationButtonSpring() {
       throw new Error(`Moving to navigation button should contain unique ID!`);
 
     const isNavigatingToSameButton = activeId.current === buttonId;
-    if (isNavigatingToSameButton) return;
+    if (isNavigatingToSameButton && !options?.force) return;
 
     activeId.current = buttonId;
 
@@ -50,18 +56,20 @@ export function useActiveNavigationButtonSpring() {
             width: boundingClientRect.width,
             height: boundingClientRect.height,
           },
+          immediate: options?.immediate,
         });
       }, 100);
+    } else {
+      api.start({
+        to: {
+          marginLeft,
+          marginTop,
+          width: boundingClientRect.width,
+          height: boundingClientRect.height,
+        },
+        immediate: options?.immediate,
+      });
     }
-
-    api.start({
-      to: {
-        marginLeft,
-        marginTop,
-        width: boundingClientRect.width,
-        height: boundingClientRect.height,
-      },
-    });
   }
 
   return {
