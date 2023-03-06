@@ -70,6 +70,8 @@ export function BouncyBox({
   }, []);
 
   return bodyTransitions((styles, children) => (
-    <animated.div style={styles}>{children}</animated.div>
+    <animated.div style={{ ...styles, willChange: "transform" }}>
+      {children}
+    </animated.div>
   ));
 }
