@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from "react";
+import type { AppProps } from "next/app";
 import { useTransition, animated } from "react-spring";
 import { Inter } from "@next/font/google";
 import Head from "next/head";
@@ -8,7 +8,6 @@ import { Layout } from "@/components/Layout";
 import "normalize.css/normalize.css";
 import "speedlify-score/speedlify-score.css";
 
-import type { AppProps } from "next/app";
 import useFoucFix from "@/hooks/useFoucFix";
 import { useIsomorphicLayoutEffect } from "@/hooks";
 
