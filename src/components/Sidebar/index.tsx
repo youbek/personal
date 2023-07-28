@@ -58,7 +58,7 @@ export function Sidebar() {
         </li>
       </ul>
 
-      <a href="/yusufbek-resume-v1.pdf" download>
+      <a href="/yusufbek-resume-v4.2.pdf" download>
         <Button version="secondary" icon={<ArrowUpRight />}>
           resume
         </Button>

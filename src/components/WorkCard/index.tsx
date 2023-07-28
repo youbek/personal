@@ -2,12 +2,18 @@ import { ArrowUpRight } from "react-feather";
 import { TechnologiesList } from "../TechnologiesList";
 import styles from "./WorkCard.module.css";
 
+export type WorkProject = {
+  title: string;
+  achievements: string[];
+};
+
 export type Work = {
   startDate: string;
   endDate: string;
   positionTitle: string;
   companyName: string;
-  description: string;
+  projects: WorkProject[];
+  impact: string;
   usedTechnologies: string[];
   companyLink?: string;
 };
@@ -36,7 +42,24 @@ export function WorkCard({ work }: Props) {
             ) : null}
           </a>
         </h5>
-        <p className={styles.workCardDescription}>{work.description}</p>
+        {work.projects.map((project) => (
+          <div
+            className={styles.workCardProjectContainer}
+            key={`project-${project.title}-container`}
+          >
+            <p className={styles.workCardProject}>{project.title}</p>
+            <ul className={styles.workCardAchievementsList}>
+              {project.achievements.map((achievement, achievementIndex) => (
+                <li
+                  key={`project-${project.title}-achievement-${achievementIndex}`}
+                >
+                  - {achievement}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        <p className={styles.workCardImpact}>{work.impact}</p>
         <TechnologiesList techs={work.usedTechnologies} />
       </div>
     </div>

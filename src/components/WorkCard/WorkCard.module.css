@@ -25,10 +25,32 @@
   margin-left: 5px;
 }
 
-.workCardDescription {
+.workCardProjectContainer {
+  margin-bottom: 30px;
+}
+
+.workCardProject {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.workCardAchievementsList {
+  padding: 0;
+  margin: 0;
+}
+
+.workCardAchievementsList > li {
+  list-style: none;
   font-size: 18px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 12px;  
+  font-weight: 300;
+}
+
+.workCardImpact {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media screen and (max-width: 768px) {

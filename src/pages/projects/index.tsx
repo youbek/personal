@@ -22,7 +22,7 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: dominoThumbnail,
-                link: "https://github.com/youbek/domino-mvp",
+                link: "https://www.domino-app.com/",
                 title: "Domino - Productivity app",
                 usedTechnologies: ["Node", "TS", "React", "GraphQL"],
               }}

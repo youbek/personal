@@ -19,27 +19,26 @@ export default function Home() {
         <div>
           <BouncyBox delay={30}>
             <p>
-              Hey 👋, my name is Yusuf, and I&apos;m a JavaScript/TypeScript
-              software engineer living and working remotely from Tashkent. With
-              over 5 years of experience, I have been fortunate to work on
-              creating high-quality software using various JavaScript
-              technologies, particularly React and Node.
+              Hey 👋, I&apos;m Yusuf, a JavaScript/TypeScript software engineer
+              based in Tashkent, Uzbekistan. I have over 5 years of experience
+              building high-quality software using various JavaScript
+              technologies, with a focus on React and Node.
             </p>
           </BouncyBox>
           <BouncyBox delay={100}>
             <p>
-              Throughout my career, I have worked on delivering and architecting
-              complex CRM systems, internal tools, and micro frontends. I have
-              actively participated in decision-making processes and setting
-              team goals. Learning new technologies is a passion of mine, and I
-              constantly work to improve my skills and workflow.
+              I&apos;ve worked on a variety of projects, including delivering
+              and architecting complex CRM systems, internal tools, and micro
+              frontends. I&apos;m also an active participant in decision-making
+              processes and setting team goals.
             </p>
           </BouncyBox>
           <BouncyBox delay={120}>
             <p>
-              When I am not working, you can find me with my big family in
-              Tashkent, Uzbekistan. I enjoy traveling, playing online games such
-              as Dota 2, and having 6 cups of coffee a day.
+              I&apos;m always learning new technologies and looking for ways to
+              improve my skills and workflow. In my free time, I enjoy spending
+              time with my family, traveling, playing online games, and drinking
+              coffee.
             </p>
           </BouncyBox>
         </div>
