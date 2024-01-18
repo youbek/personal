@@ -2,6 +2,21 @@ import { Work } from "@/components/WorkCard";
 
 const works: Work[] = [
   {
+    positionTitle: "Senior Software Engineer",
+    companyName: "Exadel",
+    projects: [
+      {
+        title: "SCOPE3.COM",
+        achievements: [],
+      },
+    ],
+    impact: "",
+    startDate: "2023 December",
+    endDate: "Present",
+    usedTechnologies: ["Next.js", "React", "PostgreSQL", "GraphQL", "Prisma"],
+    companyLink: "https://www.exadel.com/",
+  },
+  {
     positionTitle: "Software Engineer",
     companyName: "Sphere Partners",
     projects: [
