@@ -6,7 +6,6 @@ import Head from "next/head";
 import "@/styles/globals.css";
 import { Layout } from "@/components/Layout";
 import "normalize.css/normalize.css";
-import "speedlify-score/speedlify-score.css";
 
 import useFoucFix from "@/hooks/useFoucFix";
 import { useIsomorphicLayoutEffect } from "@/hooks";
@@ -18,11 +17,6 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }: AppProps) {
   useFoucFix();
-
-  useIsomorphicLayoutEffect(() => {
-    // @ts-ignore
-    import("speedlify-score/speedlify-score");
-  }, []);
 
   const pageTransitions = useTransition([Component], {
     from: { opacity: 1 },
