@@ -34,7 +34,7 @@ export default function Home() {
           <BouncyBox delay={100}>
             <p>
               I&apos;ve worked on a variety of projects, including delivering
-              and architecting complex CRM systems, leeding frontend work on
+              and architecting complex CRM systems, leading frontend work on
               core features, internal tools, and micro frontends. I actively
               lead decision-making processes and play a key role in setting team
               goals.
