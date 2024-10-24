@@ -40,10 +40,6 @@
   width: 20px;
 }
 
-.speedlifyContainer {
-  margin-top: -5px
-}
-
 
 @media screen and (max-width: 1280px) {
   .footerContent {
@@ -60,10 +56,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .speedlifyContainer {
-    display: none;
-  }
-  
   .footerContent {
     width: 100%;
     padding: 0px 20px;

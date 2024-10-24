@@ -22,7 +22,6 @@
     "react-dom": "18.2.0",
     "react-feather": "^2.0.10",
     "react-spring": "^9.6.1",
-    "speedlify-score": "^3.0.0",
     "typescript": "4.9.5"
   }
 }

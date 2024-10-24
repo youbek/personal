@@ -7,13 +7,27 @@ const works: Work[] = [
     projects: [
       {
         title: "SCOPE3.COM",
-        achievements: [],
+        achievements: [
+          "Led frontend work for new features that enabled automation for client's data integration of choice.",
+          "Developed robust data extraction processes in Node.js, utilizing Google Cloud Services.",
+          "Created and optimized advanced queries in PostgreSQL to enable complex, multi-table data analysis",
+        ],
       },
     ],
-    impact: "",
+    impact:
+      "Led UI development for an automated data integration solution that streamlined a manual process for the Customer Experience team by enabling direct exports from clients' file-based and cloud-based storage solutions, significantly reducing manual effort and improving efficiency.",
     startDate: "2023 December",
     endDate: "Present",
-    usedTechnologies: ["Next.js", "React", "PostgreSQL", "GraphQL", "Prisma"],
+    usedTechnologies: [
+      "React",
+      "Node.js",
+      "GraphQL",
+      "Prisma",
+      "Node.js",
+      "TypeScript",
+      "Google Cloud Storage",
+      "Google Cloud Functions",
+    ],
     companyLink: "https://www.exadel.com/",
   },
   {
