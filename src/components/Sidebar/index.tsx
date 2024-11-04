@@ -53,7 +53,7 @@ export function Sidebar() {
             href="/projects"
             onNavigation={handleNavigationChange}
           >
-            projects
+            side projects
           </SidebarNavButton>
         </li>
       </ul>

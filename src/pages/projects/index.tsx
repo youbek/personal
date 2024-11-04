@@ -14,7 +14,7 @@ function ProjectsPage() {
   return (
     <div>
       <BouncyBox>
-        <h1>Projects</h1>
+        <h1>Side Projects</h1>
       </BouncyBox>
       <div className={styles.container}>
         <div className={styles.projectsRow}>
@@ -22,7 +22,6 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: dominoThumbnail,
-                link: "https://www.domino-app.com/",
                 title: "Domino - Productivity app",
                 usedTechnologies: ["Node", "TS", "React", "GraphQL"],
               }}
@@ -32,8 +31,7 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: loadistThumbnail,
-                link: "https://qa.loadist.io/sign-in",
-                title: "Loadist.io - Relay automation",
+                title: "Loadist - Amazon relay automation",
                 usedTechnologies: [
                   "PostgreSQL",
                   "AWS",
@@ -52,7 +50,6 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: sozTopThumbnail,
-                link: "https://play.google.com/store/apps/details?id=com.OyyuGames.WordGame",
                 title: "Soz Top - Word Game",
                 usedTechnologies: ["C#", "Unity 3D"],
               }}
@@ -62,7 +59,6 @@ function ProjectsPage() {
             <ProjectCard
               project={{
                 imageSrc: aralashSozThumbnail,
-                link: "https://apps.apple.com/us/app/aralash-soz-soz-oyini/id1465774649",
                 title: "Aralash So'z - Word Game",
                 usedTechnologies: ["C#", "Unity 3D"],
               }}
