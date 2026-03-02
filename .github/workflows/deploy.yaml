@@ -1,0 +1,20 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - main
+jobs:
+  name: Build and deploy
+  stpes:
+    - uses: "./.github/workflow/build.yaml"
+      name: "Build"
+    - uses: aws-actions/configure-aws-credentials@v6.0.0
+      name: "AWS Configuration"
+      with:
+        aws-region: us-east-1
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - name: "Deploy to S3"
+      run: aws s3 sync out ${{ secrets.AWS_S3_BUCKET }}
+    - name: "Cloudfront invalidation"
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/*"

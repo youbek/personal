@@ -5,7 +5,8 @@ import styles from "./ProfilePicture.module.css";
 export function ProfilePicture() {
   return (
     <div className={styles.profilePictureContainer}>
-      <Image src={profilePic} alt="yusufbek" width={96} />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={profilePic.src} alt="yusufbek" width={96} />
     </div>
   );
 }
