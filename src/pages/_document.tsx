@@ -17,6 +17,11 @@ export default function Document() {
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
         </Script>
+        <Script
+          id="dynamic-date"
+          strategy="beforeInteractive"
+          src="/dynamic-date.js"
+        />
         <Main />
         <NextScript />
       </body>

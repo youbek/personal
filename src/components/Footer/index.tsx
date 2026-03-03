@@ -1,5 +1,5 @@
 import { GitHub, Linkedin } from "react-feather";
-
+import Script from "next/script";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -7,7 +7,7 @@ export function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerContent}>
         <div>
-          <p>© Yusufbek Alimatov 2023</p>
+          <p id="copyright-date">© Yusufbek Alimatov 2023</p>
         </div>
         <div className="flex">
           <div style={{ marginRight: 10 }}>
