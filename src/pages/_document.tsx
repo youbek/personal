@@ -19,7 +19,7 @@ export default function Document() {
         </Script>
         <Script
           id="dynamic-date"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
           src="/dynamic-date.js"
         />
         <Main />
